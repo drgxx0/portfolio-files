@@ -1,5 +1,5 @@
 import React from 'react'
-import Aux from '../../../hoc/.Aux/Aux'
+
 import { Menu } from 'semantic-ui-react';
 import { NavLink } from 'react-router-dom';
 
@@ -16,7 +16,7 @@ const NavBarItems = ({onHandleActiveItem, activeItem, device, onSideBarManage })
         onClick={device === 'desktop'? onHandleActiveItem : device === 'mobile' ? () => onSideBarManage(false) : null} 
         style={{textTransform: 'capitalize'}}>{item}</Menu.Item>
     })
-    return <Aux>{mapMenuItems}</Aux>
+    return <React.Fragment>{mapMenuItems}</React.Fragment>
 }
 
 export default NavBarItems

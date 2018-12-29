@@ -3,7 +3,6 @@ import { Responsive } from 'semantic-ui-react'
 
 import DesktopNavBar from './desktop/DesktopNavBar'
 import MobileNavBar from './mobile/MobileNavBar'
-import Aux from '../../hoc/.Aux/Aux'
 
 
 class NavBar extends Component {
@@ -17,14 +16,14 @@ class NavBar extends Component {
   render() {
     const { onSideBarManage, activeItem } = this.props
     return (
-      <Aux>
+      <React.Fragment>
         <Responsive minWidth={Responsive.onlyTablet.minWidth}>
           <DesktopNavBar activeItem={activeItem} onHandleActiveItem={this.onHandleActiveItem} />
         </Responsive>
         <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
           <MobileNavBar onSideBarManage={onSideBarManage} />
         </Responsive>
-      </Aux>
+      </React.Fragment>
     );
   }
 } 

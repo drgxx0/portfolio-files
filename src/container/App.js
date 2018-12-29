@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
 import { Route, Switch, withRouter } from 'react-router-dom'
 import { connect } from 'react-redux';
-import * as actionsType from '../store/actionsType'
+import * as actionsType from 'store/actionsType'
 
-import Aux from '../hoc/.Aux/Aux'
-import SideBar from '../component/UI/sidebar/SideBar'
+import SideBar from 'component/UI/sidebar/SideBar'
 
-import Navbar from '../component/navbar/NavBar'
-import Home from '../component/home/Home'
-import About from '../component/about/About'
-import Projects from '../component/projects/Projects'
-import Contact from '../component/contact/Contact'
-import Footer from '../component/footer/footer'
+import Navbar from 'component/navbar/NavBar'
+import Home from 'component/home/Home'
+import About from 'component/about/About'
+import Projects from 'component/projects/Projects'
+import Contact from 'component/contact/Contact'
+import Footer from 'component/footer/footer'
 
 class App extends Component {
 
@@ -25,7 +24,7 @@ class App extends Component {
     const { sideBar, onActiveItem, onSideBarManage, activeItem } = this.props
     window.addEventListener('popstate', this.pageLocation())
     return (
-      <Aux>
+      <React.Fragment>
         <SideBar sideBar={sideBar} onSideBarManage={onSideBarManage}>
               <Navbar activeItem={activeItem} onSideBarManage={onSideBarManage} onActiveItem={onActiveItem} />
               <Switch>
@@ -36,7 +35,7 @@ class App extends Component {
               </Switch>
               <Footer />
         </SideBar>
-      </Aux>
+      </React.Fragment>
     );
   }
 }
