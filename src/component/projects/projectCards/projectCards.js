@@ -4,7 +4,7 @@ import { Card, Image } from 'semantic-ui-react'
 import cssGradientGenerator from 'component/assets/img/cssgradientgenerator.jpg'
 import roboFriends from 'component/assets/img/robofriends.jpg'
 import faceApp from 'component/assets/img/faceapp.jpg'
-import learnkorean from 'component/assets/img/learnkorean.jpg'
+import ecommerce from 'component/assets/img/basic-ecommerce.jpg'
 import expenseTracker from 'component/assets/img/expense.jpg'
 import quote from 'component/assets/img/quote.jpg'
 import pig from 'component/assets/img/pig.jpg'
@@ -24,18 +24,18 @@ const ProjectCards = () => {
         src: faceApp, 
         href: 'https://smart-app-face.herokuapp.com/', 
         desc: `Advanced Web App with signin and signup forms connected to a server develop in Nodejs+ExpressJs and that store data in a Postgresql's database. Also It's connected to an API to Face recognition`},
-        {head: 'Learn Korean', 
-        src: learnkorean, 
-        href: 'https://drgxx0.github.io/learnkorean/', 
-        desc: `Web App to education that show a simple single page with a singup and signin form, this project was made with ReactJs+Redux and It's connected to a NodeJs+ExpressJs server made by me too`},
+        {head: 'Basic Ecommerce', 
+        src: ecommerce, 
+        href: 'http://basic-ecommerce.s3-website.us-east-2.amazonaws.com/', 
+        desc: `ReactJS web App to a basic ecommerce, manage state with Redux and side effect with Saga. It have Auth0 integration to manage login and signup request and it's connected to API Gateway from AWS and manage with Lambda functions`},
         {head: 'Expense Tracker', 
         src: expenseTracker, 
         href: 'https://drgxx0.github.io/expense-tracker/', 
-        desc: 'App web to track your expenses, show your actual funds, log your expenses and it have and graph to keep record in the most easy way. Make wiht ReactJs+Redux'},
+        desc: 'App web to track your expenses, show your actual funds, log your expenses and it have and graph to keep record in the most easy way. Make wiht ReactJs+Redux. Username: test Password: 1234'},
         {head: 'Random Quote Machine',
         src: quote,
         href: 'https://drgxx0.github.io/random_quote_machine/',
-        desc: 'App web to generate random quotes. Make with ReactJs+Redux'},
+        desc: 'App web to generate random quotes. Make with ReactJs+Redux/Saga'},
         {head: 'Pig Game',
         src: pig,
         href: 'https://drgxx0.github.io/pig-game/',
