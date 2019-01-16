@@ -8,6 +8,7 @@ import ecommerce from 'component/assets/img/basic-ecommerce.jpg'
 import expenseTracker from 'component/assets/img/expense.jpg'
 import quote from 'component/assets/img/quote.jpg'
 import pig from 'component/assets/img/pig.jpg'
+import weight from 'component/assets/img/weight.jpg'
 
 const ProjectCards = () => {
 
@@ -39,7 +40,11 @@ const ProjectCards = () => {
         {head: 'Pig Game',
         src: pig,
         href: 'https://drgxx0.github.io/pig-game/',
-        desc: 'A fun pig game make with ReactJs+Redux. Using new hooks from v16.7.0-alpha.2'}
+        desc: 'A fun pig game make with ReactJs+Redux. Using new hooks from v16.7.0-alpha.2'},
+        {head: 'Weight Tracker',
+        src: weight,
+        href: 'https://drgxx0.github.io/weighttracker/',
+        desc: 'Weight tracker create with ReactJs and Redux, with Material-UI and Formik/Yup to validate forms'}
     ]
 
     const projectsMap = projects.map(items => {
