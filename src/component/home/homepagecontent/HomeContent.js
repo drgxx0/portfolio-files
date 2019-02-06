@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 
 import header from '../../assets/img/head.jpg'
 
+
 const HomeContent = ({ mobile, onActiveItem }) => {
     return (
     <Segment

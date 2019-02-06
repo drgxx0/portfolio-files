@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card, Image } from 'semantic-ui-react'
 
-import cssGradientGenerator from 'component/assets/img/cssgradientgenerator.jpg'
+import landingpage from 'component/assets/img/paginaprueba.jpg'
 import roboFriends from 'component/assets/img/robofriends.jpg'
 import faceApp from 'component/assets/img/faceapp.jpg'
 import ecommerce from 'component/assets/img/basic-ecommerce.jpg'
@@ -13,10 +13,10 @@ import weight from 'component/assets/img/weight.jpg'
 const ProjectCards = () => {
 
     const projects = [
-        {head: 'Css Gradient Generator', 
-        src: cssGradientGenerator, 
-        href: 'https://drgxx0.github.io/cssgradientgenerator.github.io/', 
-        desc: 'A fun project with CSS3 and JavaScript that provides a powerfull design tool'},
+        {head: 'Test Landing page with admin panel', 
+        src: landingpage, 
+        href: 'https://drgxx0.github.io/proyectodrgxx0/', 
+        desc: 'Landing page with 2 form\'s type connected to a server create with NodeJs+ExpressJs, data is storage in a MongoDB. It has a Admin panel to manage the data in database. Frontend manage state with Redux+Saga. UI create with Semantic UI.'},
         {head: 'RoboFriends', 
         src: roboFriends, 
         href: 'https://drgxx0.github.io/robofriendsapp/', 
